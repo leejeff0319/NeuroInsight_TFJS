@@ -31,3 +31,32 @@ body {
     text-wrap: balance;
   }
 }
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;     /*readjust with icon image addition*/
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.navbar-logo {
+  font-size:1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links a:hover{
+  text-decoration: underline;
+}
