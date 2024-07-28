@@ -1,0 +1,12 @@
+/* Webfont: VersatyloRoundedOutline */@font-face {
+    font-family: 'VersatyloRoundedOutline';
+    src: url('VersatyloRounded-Outline.eot'); /* IE9 Compat Modes */
+    src: url('VersatyloRounded-Outline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('VersatyloRounded-Outline.woff') format('woff'), /* Modern Browsers */
+         url('VersatyloRounded-Outline.woff2') format('woff2'), /* Modern Browsers */
+         url('VersatyloRounded-Outline.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
