@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center ">
+    <main className="flex min-h-screen flex-col items-center">
 
       {/* Picture Banner */}
-      <div className="flex h-160 w-full flex-col items-center justify-between mb-16">
+      <div className="flex h-160 w-full flex-col mb-16">
         <Image className="image-container"
           src="/550.png" 
           width={2600}
@@ -30,11 +30,14 @@ export default function Home() {
 
         {/* Explanation Text */}
         <div className="col-span-2">
-          <h2 className="text-box ml-14 mr-5 mt-14 text-2xl">
-            <b>The Elusiveness of Brain Tumor</b>
+          <h2 className="text-box ml-14 mr-5 mt-14 text-2xl font-semibold">
+            The Elusiveness of Brain Tumor
           </h2>
-          <p className="text-box ml-14 mt-3" >
-            Statistics
+          <p className="text-box ml-14 mt-2" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus mauris ut porta venenatis. Morbi vitae consectetur magna. Quisque euismod nisl nibh, quis consectetur neque rutrum at. Phasellus cursus erat a felis placerat, a finibus ligula ultricies. Donec egestas, erat vel sagittis porta, nunc quam convallis justo, ac cursus enim nisl eget libero. Cras venenatis, eros vel luctus semper, risus nisi iaculis nisi, vel ullamcorper ligula justo pharetra nulla. Vestibulum mattis maximus cursus. Quisque justo nisl, sagittis a ipsum eu, condimentum aliquam lectus. Nullam eget suscipit justo, quis sagittis arcu.
+          </p>
+          <p className="text-box ml-14 mt-2" >
+          Phasellus eget erat sed purus placerat blandit ut eu ante. Aliquam ac massa non lacus mattis iaculis nec sed metus. Quisque faucibus, quam sed vestibulum molestie, sapien sem varius leo, non eleifend nibh dolor vitae tortor. Suspendisse nisi orci, elementum ut cursus pretium, bibendum id ex. Quisque blandit ligula at leo bibendum, et laoreet lacus ultrices. Duis pellentesque augue nulla, id congue sapien molestie non. Cras neque urna, malesuada et consequat euismod, gravida sed odio. Donec tincidunt enim quis ipsum convallis, eu cursus leo rutrum. Ut sit amet magna consectetur, auctor mauris eget, tempus nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
           </p>
         </div>
           

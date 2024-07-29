@@ -149,3 +149,35 @@ body {
 .model-text:hover{
   transform: scale(1.2);
 }
+
+/* Page headers on subpages */
+.page-header{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 4rem;
+  /* background-color: #4a81de; */
+  background-color:white;
+}
+
+.header-text{
+  color: black;
+  margin-left: 4%;
+  font-size: 2rem;
+  font-weight:bold;
+}
+
+.header-home{
+  display:flex;
+  color: black;
+  position: absolute;
+  right: 10%;
+}
+
+.header-home:hover{
+  text-decoration: underline;
+}
+
+/* About Us */

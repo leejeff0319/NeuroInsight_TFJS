@@ -8,7 +8,7 @@ export default function Home() {
 
       {/* Page Header */}
       <div className="page-header">
-        <h2 className="header-text">Papers</h2>
+        <h2 className="header-text">Our Code</h2>
         <Link href="/" className="header-home"> <IoHomeSharp className="mr-2" size="20"/> Home </Link>
       </div>
       
