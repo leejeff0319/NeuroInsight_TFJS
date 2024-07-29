@@ -1,9 +1,0 @@
-/* Webfont: VersatyloRoundedOutline */@font-face {
-    font-family: 'VersatyloRoundedOutline';
-    src: url('VersatyloRounded-Outline.woff2') format('woff2'), /* Modern Browsers */
-         url('VersatyloRounded-Outline.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-

@@ -1,9 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from 'next/image';
-import localFont from '@next/font/local'
-
-// const myFont = localFont({ src: '/fonts/VersatyloRounded/Web-PS/VersatyloRounded.woff2' });
 
 const Navbar = () => {
     
