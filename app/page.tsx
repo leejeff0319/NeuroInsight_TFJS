@@ -44,7 +44,7 @@ export default function Home() {
             src="/brain-tumor-300.png" 
             width={1300}
             height={260}
-            alt="Main Image of website"
+            alt="Secondary Image of website"
             />
         </div>
       </div>
@@ -53,39 +53,45 @@ export default function Home() {
       <div className="w-full h-60 grid text-center bg-white lg:mb-0 lg:w-full lg:grid-cols-12 lg:text-left">
 
         {/* TensorFlow Pretrained Model */}
-        <div className="col-span-4 p-2 ">
-          <Link href="/">
-            <Image className="image-container"
-              src="/tf2-3.6125.png" 
-              width={800}
-              height={260}
-              alt="Main Image of website"
-            />
-          </Link>
+        <div className="col-span-4 p-2 image-model">
+          <Image 
+            src="/tf2-3.6125.png" 
+            width={800}
+            height={260}
+            alt="Image of Tensorflow"
+          />
+          <div className="overlay">
+            <Link href="/approach/TensorFlow" className="model-text">TensorFlow Model</Link>
+            <Link href="/code/TensorFlow" className="model-text">Model Code</Link>
+          </div>
         </div>
 
         {/* CNN Model from scratch */}
-        <div className="col-span-4 p-2">
-        <Link href="/">
-            <Image className="image-container"
-              src="/cnn.png" 
-              width={800}
-              height={260}
-              alt="Main Image of website"
-            />
-          </Link>
+        <div className="col-span-4 p-2 image-model">
+          <Image className="image-container"
+            src="/cnn.png" 
+            width={800}
+            height={260}
+            alt="Image of CNN"
+          />
+          <div className="overlay">
+            <Link href="/approach/CNN" className="model-text">CNN Model</Link>
+            <Link href="/code/CNN" className="model-text">Model Code</Link>
+          </div>
         </div>
 
-        {/* Last CNN Model */}
-        <div className="col-span-4 p-2">
-        <Link href="/">
-            <Image className="image-container"
-              src="/fastai.png" 
-              width={800}
-              height={260}
-              alt="Main Image of website"
-            />
-          </Link>
+        {/* FastAI */}
+        <div className="col-span-4 p-2 image-model">
+          <Image className="image-container"
+            src="/fastai.png" 
+            width={800}
+            height={260}
+            alt="Image of FastAI"
+          />
+          <div className="overlay">
+            <Link href="/approach/FastAI" className="model-text">FastAI Model</Link>
+            <Link href="/code/FastAI" className="model-text">Model Code</Link>
+          </div>
         </div>
       </div>
 

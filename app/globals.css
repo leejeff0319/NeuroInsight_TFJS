@@ -56,7 +56,6 @@ body {
   color: white;
   justify:center;
   align:center; 
-  font-family: 'VersatyloRounded';
 }
 
 .navbar-links a {
@@ -69,7 +68,7 @@ body {
 }
 
 .navbar-links a:hover{
-  text-decoration: underline;
+  font-weight:bold;
 }
 
 .text-box {
@@ -86,6 +85,7 @@ body {
   color: black;
 }
 
+/* Main and secondary images */
 .image-container {
   display: flex;
   justify-content: center;
@@ -97,5 +97,55 @@ body {
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire container */
+  object-fit: cover; /* image adjust size acccordingly*/
+}
+
+/* Model images */
+
+.image-model {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-model:hover{
+  /* transform: scale(1.2); */
+  opacity: 0.8;
+}
+
+.image-model .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  flex-direction: column;
+}
+
+.image-model:hover .overlay {
+  opacity: 1; 
+}
+
+.model-text {
+  color:white;
+  padding: 0.5rem;
+  transform: transform 0.3s ease;
+  font-size: 2rem;
+}
+
+.model-text:hover{
+  transform: scale(1.2);
 }
