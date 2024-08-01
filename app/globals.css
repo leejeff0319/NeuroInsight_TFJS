@@ -8,13 +8,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Bugs out on devices with dark theme */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -82,7 +83,7 @@ body {
   padding: 1rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  color: black;
+  /* color: black; */
 }
 
 /* Main and secondary images */
@@ -181,3 +182,157 @@ body {
 }
 
 /* About Us */
+.profiles{
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin: 0.5rem;
+}
+
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  width:30%;
+  height:70%;
+}
+
+.profile-image img{
+  padding:0.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name{
+  font-weight:bold;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+}
+
+.profile-sns{
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 70%;
+}
+
+.profile-description{
+  display: flex;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  text: 4rem;
+}
+
+/* Coding Page (JupyterNotebook Cells) */
+.notebook-name {
+  height: 100%;
+  line-height: 1em;
+  margin-left: 16px;
+  border: none;
+  font-size: 126.5%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 2px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.notebook-container {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #f7f7f7;
+  padding: 2rem;
+}
+
+/* Style for individual cells */
+.cell {
+  background-color: white;
+  border: 1px solid #e1e4e8;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.code-cell {
+  background-color: #f9f9f9;
+  border: 1px solid #c5c8c6;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow-x: auto;
+  margin-left: 8rem;
+  margin-bottom: 1rem;
+}
+
+.code-content {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  overflow: visible;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+.output-cell {
+  background-color: #f9f9f9;
+  font-size:0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+  margin-bottom: 1rem;
+}
+
+/* Markdown cell */
+.markdown-cell {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-left: 8rem;
+  margin-bottom: 1rem;
+}
+
+.code-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.code-overlay .overlay{
+  position: absolute;
+  bottom: 70%;
+  left: 100%;
+  max-height: 800px; 
+  overflow-y: auto; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.code-overlay:hover .overlay{
+  opacity: 1; 
+  pointer-events: auto;
+}
+
+@media (max-width: 1600px) {
+  .code-content {
+    font-size: 0.5rem;
+  }
+  .output-cell {
+    font-size: 0.4rem;
+  }
+  .code-overlay .overlay{
+    font-size: 0.5rem;
+  }
+}
