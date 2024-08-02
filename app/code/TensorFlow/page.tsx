@@ -87,7 +87,7 @@ try:`}
 
 						<div className="code-overlay">
 							<SyntaxHighlighter language="python" style={docco} className=" -mx-4">
-								{`# Get Image generators
+								{`	# Get Image generators
     batch_size=32
     train_gen, valid_gen, test_gen = create_model_data(train_df, valid_df, test_df, batch_size)`}
 							</SyntaxHighlighter>

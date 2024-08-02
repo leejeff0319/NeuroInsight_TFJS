@@ -1,5 +1,3 @@
-"use server";
-
 import Image from "next/image";
 import Link from "next/link";
 import { IoHomeSharp } from "react-icons/io5";
@@ -56,7 +54,7 @@ export default function Home() {
 
               {/* Picture */}
               <div className="profile-image rounded-lg bg-blue-200">
-                <Image src="/AboutSean.jpg" width={250} height={700} alt=""></Image>
+                <Image src="/Sean_ppf.png" width={250} height={700} alt=""></Image>
               </div>
 
               {/* Name and Social Media */}
