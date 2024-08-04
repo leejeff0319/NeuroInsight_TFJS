@@ -14,8 +14,29 @@ const ImageUpload: React.FC = () => {
 	}, []);
 
 	const loadModel = async (): Promise<void> => {
+		
 		try {
-			const loadedModel = await tf.loadLayersModel('/TensorFlowModel/model_saved/1/efficientnetv2-b3-Brain Tumor-99.11.h5');
+			// Normalization Layer Debugging for TFJS
+			class Normalization extends tf.layers.Layer {
+				constructor(config: tf.serialization.ConfigDict) {
+					super(config);
+				}
+	
+				call(inputs: tf.Tensor | tf.Tensor[]): tf.Tensor | tf.Tensor[] {
+					return tf.tidy(() => {
+						const input = Array.isArray(inputs) ? inputs[0] : inputs;
+						const mean = tf.mean(input, -1, true);
+						const variance = tf.moments(input, [-1], true).variance as tf.Tensor;
+						return input.sub(mean).div(tf.sqrt(variance.add(tf.backend().epsilon())));
+					});
+				}
+	
+				static className = 'Normalization';
+			}
+	
+			tf.serialization.registerClass(Normalization);
+
+			const loadedModel = await tf.loadLayersModel('/TensorFlowModel/model_saved/1/model/model.json');
 			setModel(loadedModel);
 		} catch (error) {
 			console.error('Failed to load model:', error);

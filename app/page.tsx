@@ -39,7 +39,7 @@ export default function Home() {
             {/* The sixth most common malignancy worldwide, about 450,000 individuals die from this form of the disease each year. 
             Early detection is crucial to improving outcomes, patients often undergo head and neck imaging for various nonspecific symptoms, presenting opportunity for intervention, 
             In about 70% of such misses, cancer was evident on prior CT or MRI and the physician overlooked it, while the other 30% were the result of misinterpretation.
-            Canadian Association of Radiologists Journal.*/}
+            Canadian Association of Radiologists Journal. https://radiologybusiness.com/topics/care-delivery/healthcare-quality/radiologist-missed-head-and-neck-cancer-imaging*/}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus mauris ut porta venenatis. Morbi vitae consectetur magna. Quisque euismod nisl nibh, quis consectetur neque rutrum at. Phasellus cursus erat a felis placerat, a finibus ligula ultricies. Donec egestas, erat vel sagittis porta, nunc quam convallis justo, ac cursus enim nisl eget libero. Cras venenatis, eros vel luctus semper, risus nisi iaculis nisi, vel ullamcorper ligula justo pharetra nulla. Vestibulum mattis maximus cursus. Quisque justo nisl, sagittis a ipsum eu, condimentum aliquam lectus. Nullam eget suscipit justo, quis sagittis arcu.
           </p>
           <p className="text-box ml-14 mt-2 mb-2" >
