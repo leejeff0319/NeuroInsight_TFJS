@@ -35,15 +35,15 @@ export default function Home() {
           <h2 className="text-box ml-14 mr-5 mt-14 text-2xl font-semibold">
             The Elusiveness of Brain Tumor
           </h2>
-          <p className="text-box ml-14 mt-2" >
-            {/* The sixth most common malignancy worldwide, about 450,000 individuals die from this form of the disease each year. 
-            Early detection is crucial to improving outcomes, patients often undergo head and neck imaging for various nonspecific symptoms, presenting opportunity for intervention, 
+          <p className="text-box ml-14 mt-2 mr-2" >
+            Brain tumor is the sixth most common malignancy worldwide, in which about 450,000 individuals are konwn to die from each year. Physicians are known to have missed
+            an opportunity to diagnose head and neck cancer on an earlier imaging exam in about 4% of cases.
             In about 70% of such misses, cancer was evident on prior CT or MRI and the physician overlooked it, while the other 30% were the result of misinterpretation.
-            Canadian Association of Radiologists Journal. https://radiologybusiness.com/topics/care-delivery/healthcare-quality/radiologist-missed-head-and-neck-cancer-imaging*/}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus mauris ut porta venenatis. Morbi vitae consectetur magna. Quisque euismod nisl nibh, quis consectetur neque rutrum at. Phasellus cursus erat a felis placerat, a finibus ligula ultricies. Donec egestas, erat vel sagittis porta, nunc quam convallis justo, ac cursus enim nisl eget libero. Cras venenatis, eros vel luctus semper, risus nisi iaculis nisi, vel ullamcorper ligula justo pharetra nulla. Vestibulum mattis maximus cursus. Quisque justo nisl, sagittis a ipsum eu, condimentum aliquam lectus. Nullam eget suscipit justo, quis sagittis arcu.
+            {/* Canadian Association of Radiologists Journal. https://radiologybusiness.com/topics/care-delivery/healthcare-quality/radiologist-missed-head-and-neck-cancer-imaging */}
           </p>
-          <p className="text-box ml-14 mt-2 mb-2" >
-            Phasellus eget erat sed purus placerat blandit ut eu ante. Aliquam ac massa non lacus mattis iaculis nec sed metus. Quisque faucibus, quam sed vestibulum molestie, sapien sem varius leo, non eleifend nibh dolor vitae tortor. Suspendisse nisi orci, elementum ut cursus pretium, bibendum id ex. Quisque blandit ligula at leo bibendum, et laoreet lacus ultrices. Duis pellentesque augue nulla, id congue sapien molestie non. Cras neque urna, malesuada et consequat euismod, gravida sed odio. 
+          <p className="text-box ml-14 mt-2 mb-2 mr-2" >
+            An early detection is crucial to improving outcomes. It is possible when patients often undergo head and neck imaging for various nonspecific symptoms, 
+            and present opportunity for intervention. Maybe with the help of AI, the number of misdiagnosis could go down even lower.
           </p>
         </div>
 
