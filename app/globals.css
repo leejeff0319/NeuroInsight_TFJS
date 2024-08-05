@@ -158,7 +158,7 @@ body {
   align-items: center;
   height: 4rem;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   /* background-color: #4a81de; */
   background-color:white;
 }
@@ -217,6 +217,7 @@ body {
 }
 
 .profile-sns{
+  font-size: 0.75rem;
   display: flex;
   justify-content: center;
   padding: 0.5rem;
@@ -230,6 +231,26 @@ body {
   padding-bottom: 0.5rem;
   width: 100%;
   text: 4rem;
+}
+
+.profile-description h2 {
+  font-size: 0.75rem;
+}
+
+.profile-about{
+  font-size: 0.85rem;
+}
+
+@media (min-width: 2000px) {
+  .profile-about{
+    font-size: 1rem;
+  }
+  .profile-description h2 {
+    font-size: 0.95rem;
+  }
+  .profile-sns{
+    font-size: 1rem;
+  }
 }
 
 /* Coding Page (JupyterNotebook Cells) */
@@ -370,7 +391,7 @@ body {
 }
 
 .card-image>i {
-  font-size: 6em;
+  font-size: 5rem;
   opacity: 0.25;
 }
 
@@ -389,7 +410,7 @@ body {
 }
 
 .card-info>i {
-  font-size: 1em;
+  font-size: 0.9rem;
   height: 20px;
   line-height: 20px;
 }
@@ -397,13 +418,13 @@ body {
 .card-info-title>h3 {
   width: 100%;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1.0rem;
   line-height: 20px;
   font-weight: bold;
 }
 
 .card-info-title>h4 {
   color: var(--card-title);
-  font-size: 0.85em;
+  font-size: 0.75rem;
   margin-top: 8px;
 }

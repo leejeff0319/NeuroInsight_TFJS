@@ -23,12 +23,12 @@ export default function Home() {
         <div className="grid grid-cols-12">
           <div className="w-full col-start-4 col-end-10">
             <h2 className="bg-white pt-2 pr-2 pl-2 rounded-t-md text-lg sm:text-lg md:text-lg lg:text-xl xl:text-2xl font-semibold">Source Codes</h2>
-            <p className="bg-white p-2 text-sm sm:text-md md:text-md lg:text-lg"> This section contains the source codes we used to train the models.
+            <p className="bg-white p-2 profile-about"> This section contains the source codes we used to train the models.
               We decided to omit functions from the page as it would be too verbose and irrelevant to understanding the overall training process. However, if you wish to
               take a look at the source code for the functions we used, please feel free to hover over each of them. This will bring up the source code of the function and
               call back functions if you wish to take a look into them as well.</p>
             <div className="bg-white flex justify-center pb-2 rounded-b-md " >
-              <Image src="/overlay_example.png" width={800} height={1200} alt="example of the overlay" ></Image>
+              <Image src="/overlay_example_resized.png" width={800} height={1200} alt="example of the overlay" ></Image>
             </div>
           </div>
 

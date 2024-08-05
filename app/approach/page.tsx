@@ -23,7 +23,7 @@ export default function Home() {
         <div className="grid grid-cols-12">
           <div className="w-full col-start-4 col-end-10">
             <h2 className="bg-white pt-2 pr-2 pl-2 rounded-t-md text-lg sm:text-lg md:text-lg lg:text-xl xl:text-2xl font-semibold">Approach</h2>
-            <p className="bg-white p-2 text-sm sm:text-md md:text-md lg:text-lg"> This section contains our approach to the problem of brain tumor. Brain tumors will always
+            <p className="bg-white p-2  profile-about"> This section contains our approach to the problem of brain tumor. Brain tumors will always
             show up on an MRI scan, but sometimes these scans are missed due to overlooking or misinterpretation. So we built machine learning models trained for 15 classes of
             brain tumor in their earliest and latest stages. Machines cannot have biases and will look at each image without prejudice, and this will hopefully help diagnose
             brain tumors in patients who may have missed it during their medical examinations. We must emphasize again that these models should merely be used as a point of 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoHomeSharp } from "react-icons/io5";
-import ImageUpload from '../../../components/ImageUpload';
+import TensorFlowJS from '../../../components/model';
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       {/* Body */}
       <div className="grid grid-cols-12 min-h-screen ">
         <div className="col-start-4 col-end-10">
-          <ImageUpload />
+          <TensorFlowJS />
           
         </div>
       </div>
