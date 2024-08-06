@@ -79,13 +79,13 @@ export default function Home() {
             </p>
             <div className="flex flex-row justify-center items-center mt-2">
               <Image
-                src="/CM.png"
+                src="/CM.PNG"
                 width={500}
                 height={750}
                 alt="Confusion Matrix of model"
               />
               <Image
-                src="/Recall_F1.png"
+                src="/Recall_F1.PNG"
                 width={400}
                 height={350}
                 alt="precision, recall, and f1 scores"
