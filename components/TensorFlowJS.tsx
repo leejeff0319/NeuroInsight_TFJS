@@ -4,7 +4,21 @@ import React, { useState, useEffect } from 'react';
 import * as tf from '@tensorflow/tfjs';
 
 const classNames = [
-
+	"Normal",
+	"Astrocytoma",
+	"Carcinoma",
+	"Ependimoma",
+	"Ganglioma",
+	"Germinoma",
+	"Glioblastoma",
+	"Granuloma",
+	"Meduloblastoma",
+	"Meningioma",
+	"Neurocytoma",
+	"Oligodendroglioma",
+	"Paplioma",
+	"Schwannoma",
+	"Tuberculoma"
 ]
 
 
@@ -41,7 +55,7 @@ const TensorFlowJS: React.FC = () => {
 
 			tf.serialization.registerClass(Normalization);
 
-			const loadedModel = await tf.loadLayersModel('/TensorFlowModel/model_saved/1/model/model.json');
+			const loadedModel = await tf.loadLayersModel('/TensorFlowModel/model_saved/1/model1/model.json');
 			console.log('Model loaded:', loadedModel.summary());
 			setModel(loadedModel);
 		} catch (error) {
@@ -78,7 +92,7 @@ const TensorFlowJS: React.FC = () => {
 					console.log('Preprocessed tensor shape:', tensor.shape);
 					console.log('Preprocessed tensor dtype:', tensor.dtype);
 
-					// resolve(tensor as tf.Tensor4D);
+					resolve(tensor as tf.Tensor4D);
 
 				};
 				img.onerror = reject;
@@ -109,8 +123,8 @@ const TensorFlowJS: React.FC = () => {
 
 			// Interpret results
 			const classIndex = Array.from(result).indexOf(Math.max(...Array.from(result)));
-			// const className = classNames[classIndex];
-			setPrediction(`Predicted class: ${classIndex}`);
+			const className = classNames[classIndex];
+			setPrediction(`Predicted class: ${className}`);
 
 			// Reset model
 			tensor.dispose();

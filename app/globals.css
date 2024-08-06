@@ -169,7 +169,11 @@ body {
   font-size: 2rem;
   font-weight:bold;
 }
-
+.section-header-text{
+  color: black;
+  font-size: 2rem;
+  font-weight:bold;
+}
 .header-home{
   display:flex;
   color: black;
