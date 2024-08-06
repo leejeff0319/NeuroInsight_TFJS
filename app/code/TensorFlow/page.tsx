@@ -10,7 +10,7 @@ export default function Home() {
 			{/* Page Header */}
 			<div className="page-header">
 				<Image className="ml-24 mr-2" src="/jupyterNotebook.png" width={"200"} height={"200"} alt="JupyerNotebook"></Image>
-				<h2 className="notebook-name justify-center ">Brain Tumor Detection through TensorFlow"s EffcientNet</h2>
+				<h2 className="notebook-name justify-center ">Brain Tumor Detection through TensorFlow&apos;s EffcientNet</h2>
 				<Image className="mx-40 header-home" src="/python.png" width={"35"} height={"35"} alt="Python"></Image>
 				<Link href="/" className="header-home"> <IoHomeSharp className="mr-2" size="20" /> Home </Link>
 			</div>
