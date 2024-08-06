@@ -31,9 +31,13 @@ We hope that our story inspires others to explore the possibilities of AI and ma
 </span>
 
 ## <div id="features">2.Features</span>
+### Function Overlay</span>
+<img width="750" src="public/overlay_example_resized.PNG" alt="Example of the overlay">
+There is an overlay that pops up when you hover over functions in the code section of the website! This saves a lot of space, and it was actually a lot of fun to implement using CSS and the React Syntax Highlighter!
 
-<img width="750" src="public/overlay_example_resized.png" alt="Example of the overlay">
-<img width="750" src="images/Prediction_tensorboard.png" alt="Prediction tensorboard">
+### Prediction Board</span>
+<img width="250" src="public/Prediction_tensorboard.PNG" alt="Prediction tensorboard">
+A prediction bar graph shows up after the analysis of each image! This is a tensorboard-like feature that lets the user visualize the model and it also adds to the interactivity!
 </span>
 
 ## <div id="development">3. Development</span>
