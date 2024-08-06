@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoHomeSharp } from "react-icons/io5";
-import { SiTensorflow } from 'react-icons/si';
+import { SiTensorflow } from "react-icons/si";
 import { TbHandClick } from "react-icons/tb";
 import { BiSolidBrain } from "react-icons/bi";
 
@@ -44,7 +44,7 @@ export default function Home() {
                 <Link
                   href="/code/TensorFlow"
                   className="card">
-                  <div className='card-content'>
+                  <div className="card-content">
                     <span><TbHandClick size={25} /></span>
                     <div className="card-image">
                       <i className="text-pink-500"> <BiSolidBrain /></i>
