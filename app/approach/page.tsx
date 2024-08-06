@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoHomeSharp } from "react-icons/io5";
 import { SiTensorflow,
-         SiPytorch,} from 'react-icons/si';
+         SiPytorch,} from "react-icons/si";
 import { TbHandClick } from "react-icons/tb";
 import { BiSolidBrain } from "react-icons/bi";
 import { FaFire } from "react-icons/fa";
@@ -47,7 +47,7 @@ export default function Home() {
                 <Link
                   href="/approach/TensorFlow"
                   className="card">
-                  <div className='card-content'>
+                  <div className="card-content">
                     <span><TbHandClick size={25}/> Click to try our model!</span>
                     <div className="card-image">
                       <i className="text-pink-500"> <BiSolidBrain /></i>
@@ -81,7 +81,7 @@ export default function Home() {
                 <Link
                   href="/approach/TensorFlow"
                   className="card">
-                  <div className='card-content'>
+                  <div className="card-content">
                     <span><TbHandClick size={25}/> Click to try our model!</span>
                     <div className="card-image">
                       <i className="text-red-800"> <FaFire /></i>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoHomeSharp } from "react-icons/io5";
-import TensorFlowJS from '../../../components/TensorFlowJS';
+import TensorFlowJS from "../../../components/TensorFlowJS";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
           <div className="mt-8 bg-white p-4 rounded-md">
             <h2 className="section-header-text">Developmental Process</h2>
             <p className="mt-4 profile-about">
-              We chose to start with TensorFlow first because it's the machine learning library that we are both most familiar with.
+              We chose to start with TensorFlow first because it&apos;s the machine learning library that we are both most familiar with.
               We decided to use transfer learning of pretrained models after consulting Dr. Roberto Bonelli &#40;Lowy Medical&#41; about it. It turned out to be a great choice because
               we saved a lot of time and resources while training our models using Google Colab and Kaggle. <br /><br />
             </p>
@@ -33,11 +33,11 @@ export default function Home() {
             <p className="mt-4 profile-about">
               Initially, we were thinking about using the newly updated ResNet50, but ultimately
               decided to use the EfficientNet model because it was lighter weight and much faster while training. Since we were only starting with a prototype, we judged that it would be sufficent for now.
-              You can check out our source code in the "Code" section! But here are the results to our model.<br /><br />
+              You can check out our source code in the Code section! But here are the results to our model.<br /><br />
             </p>
             <h2 className="section-header-text">Training Layers</h2>
             <p className="mt-4 profile-about">
-              ReLU, or the rectified linear unit function, is the best when it comes to computer vision through convolutional neural networks. Not only is it cheaper and faster to compute, it isn't
+              ReLU, or the rectified linear unit function, is the best when it comes to computer vision through convolutional neural networks. Not only is it cheaper and faster to compute, it isn&apos;t
               affected by the vanishing gradient problem. Also since the images we are training on are grayscale images, relu function triumphs over sigmoid or tanh functions because it can show
               extremes, black vs. white, more clearly. Leaky ReLU and parametric ReLU functions might also be fun to experiment with as well. But in our scenario, ReLU looked the be the best option. <br /><br />
             </p>
