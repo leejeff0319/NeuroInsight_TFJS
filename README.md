@@ -58,9 +58,18 @@ ReLU, or the rectified linear unit function, is the best when it comes to comput
 Another factor we paid attention to was the filter/kernel sizes of our additional Conv2D layers. While Smaller filter sizes are better for distinguishing in between smaller features like circles and rectangles, larger filter sizes are better for distinguishing in between larger features such as whole objects in an image. In our case scenario, I realized that it may be more important to use smaller filter sizes while implementing some 5,5 filters to avoid overfitting to the training dataset. Dropout layers were also added to prevent overfitting. As a result, the model was able to avoid overfitting and trained up to 16 epochs, where it stopped because it was seeming minimal to no improvements.
 
 <img width="250" src="public/TensorFlowModel/model_saved/1/1_epochs.PNG" alt="Prediction tensorboard"><img width="300" src="public/TensorFlowModel/model_saved/1/1_results.PNG" alt="Prediction tensorboard">
+</span>
 
-## <div id="development">4-1. Results</span>
+## <div id="results">4-1. Results</span>
+The results show a very good model fit as there are only 4 test images incorrectly predicted by the model. The metric we should focus here is actually the recall metric. Recall measures the ratio of true positive results over the actual positives. This is the most important in our model because as we have mentioned, our primary goal is to catch the false negatives during a medical examination. Minizing Type 2 errors (false negatives) in humans is the primary focus of this model, so there should be as little image falling to the left side of the diagnonal as possible. Our model does a good job for now because it only has one Neurocytoma image falsely labeled as Ganglioglimoma. False postiive rates are less important as a little bit of caution never harmed anyone!
+</span>
 
-<img width="750" src="images/brain-tumor-300.png" alt="Secondary Image of website">
+<img width="400" src="public/CM.PNG" alt="Confusion matrix"><img width="400" src="public/Recall_F1.PNG" alt="Confusion matrix">
 
+## <div id="pytorch">5. PyTorch</span>
+COMING SOON
+</span>
 
+## <div id="fastai">6. FastAI</span>
+COMING SOON
+</span>
