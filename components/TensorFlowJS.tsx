@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import * as tf from '@tensorflow/tfjs';
-import { Bar } from 'react-chartjs-2';
-import 'chart.js/auto';
+import React, { useState, useEffect } from "react";
+import * as tf from "@tensorflow/tfjs";
+import { Bar } from "react-chartjs-2";
+import "chart.js/auto";
 
 const classNames = [
 	"Astrocytoma",
@@ -54,16 +54,16 @@ const TensorFlowJS: React.FC = () => {
 					});
 				}
 
-				static className = 'Normalization';
+				static className = "Normalization";
 			}
 
 			tf.serialization.registerClass(Normalization);
 
-			const loadedModel = await tf.loadLayersModel('/TensorFlowModel/model_saved/1/model1/model.json');
-			console.log('Model loaded:', loadedModel.summary());
+			const loadedModel = await tf.loadLayersModel("/TensorFlowModel/model_saved/1/model1/model.json");
+			console.log("Model loaded:", loadedModel.summary());
 			setModel(loadedModel);
 		} catch (error) {
-			console.error('Failed to load model:', error);
+			console.error("Failed to load model:", error);
 		}
 	};
 
@@ -93,8 +93,8 @@ const TensorFlowJS: React.FC = () => {
 					});
 					// Print output of preprocessing here
 
-					console.log('Preprocessed tensor shape:', tensor.shape);
-					console.log('Preprocessed tensor dtype:', tensor.dtype);
+					console.log("Preprocessed tensor shape:", tensor.shape);
+					console.log("Preprocessed tensor dtype:", tensor.dtype);
 
 					resolve(tensor as tf.Tensor4D);
 
@@ -190,10 +190,10 @@ const TensorFlowJS: React.FC = () => {
 								labels: predictionData.labels,
 								datasets: [
 									{
-										label: 'Prediction Confidence',
+										label: "Prediction Confidence",
 										data: predictionData.values,
-										backgroundColor: 'rgba(54, 162, 235, 0.6)',
-										borderColor: 'rgba(54, 162, 235, 1)',
+										backgroundColor: "rgba(54, 162, 235, 0.6)",
+										borderColor: "rgba(54, 162, 235, 1)",
 										borderWidth: 1,
 									},
 								],

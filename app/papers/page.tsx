@@ -29,7 +29,7 @@ export default function Home() {
                   <Link
                     href="/approach/TensorFlow"
                     className="card">
-                    <div className='card-content'>
+                    <div className="card-content">
                       <span> </span>
                       <div className="card-image">
                         <i className="text-pink-500"> </i>
@@ -62,7 +62,7 @@ export default function Home() {
                 <Link
                     href="/approach/TensorFlow"
                     className="card">
-                    <div className='card-content'>
+                    <div className="card-content">
                       <span> </span>
                       <div className="card-image">
                         <i className="text-pink-500"> </i>

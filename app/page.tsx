@@ -27,7 +27,7 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Explanation of Brain Tumor in today's society and Picture */}
+      {/* Explanation of Brain Tumor in todays society and Picture */}
       <div className="w-full h-80 grid text-center lg:mb-0 lg:w-full lg:grid-cols-4 lg:text-left">
 
         {/* Explanation Text */}
