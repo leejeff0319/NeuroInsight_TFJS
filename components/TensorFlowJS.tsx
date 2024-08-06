@@ -2,10 +2,12 @@
 
 import React, { useState, useEffect } from 'react';
 import * as tf from '@tensorflow/tfjs';
+import { Bar } from 'react-chartjs-2';
+import 'chart.js/auto';
 
 const classNames = [
-	"Normal",
 	"Astrocytoma",
+	"Normal",
 	"Carcinoma",
 	"Ependimoma",
 	"Ganglioma",
@@ -27,6 +29,8 @@ const TensorFlowJS: React.FC = () => {
 	const [previewUrl, setPreviewUrl] = useState<string | null>(null);
 	const [model, setModel] = useState<tf.LayersModel | null>(null);
 	const [prediction, setPrediction] = useState<string | null>(null);
+	const [predictionData, setPredictionData] = useState<{ labels: string[], values: number[] } | null>(null);
+
 
 	useEffect(() => {
 		loadModel();
@@ -125,7 +129,13 @@ const TensorFlowJS: React.FC = () => {
 			const classIndex = Array.from(result).indexOf(Math.max(...Array.from(result)));
 			const className = classNames[classIndex];
 			setPrediction(`Predicted class: ${className}`);
-
+			
+			// Set Prediction Data
+			setPredictionData({
+				labels: classNames,
+				values: Array.from(result)
+			});
+	
 			// Reset model
 			tensor.dispose();
 			predictions.dispose();
@@ -171,6 +181,31 @@ const TensorFlowJS: React.FC = () => {
 					<div className="mt-4">
 						<h3 className="font-semibold">Prediction Result:</h3>
 						<p>{prediction}</p>
+					</div>
+				)}
+				{predictionData && (
+					<div className="mt-4 w-full">
+						<Bar
+							data={{
+								labels: predictionData.labels,
+								datasets: [
+									{
+										label: 'Prediction Confidence',
+										data: predictionData.values,
+										backgroundColor: 'rgba(54, 162, 235, 0.6)',
+										borderColor: 'rgba(54, 162, 235, 1)',
+										borderWidth: 1,
+									},
+								],
+							}}
+							options={{
+								scales: {
+									y: {
+										beginAtZero: true,
+									},
+								},
+							}}
+						/>
 					</div>
 				)}
 			</div>

@@ -4,7 +4,8 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="navbar-container">
+            <div className="navbar-container ">
+                
 
             </div>
         </div>
