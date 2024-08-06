@@ -47,6 +47,17 @@ We chose to start with TensorFlow first because it's the machine learning librar
 Initially, we were thinking about using the newly updated ResNet50, but ultimately decided to use the EfficientNet model because it was lighter weight and much faster while training. Since we were only starting with a prototype, we judged that it would be sufficient for now. You can check out our source code in the "Code" section! But here are the results to our model.
 </span>
 ## <div id="tensorflow">4. TensorFlow</span>
+### Why EfficientNet?
+Initially, we were thinking about using the newly updated ResNet50, but ultimately decided to use the EfficientNet model because it was lighter weight and much faster while training. Since we were only starting with a prototype, we judged that it would be sufficent for now. You can check out our source code in the "Code" section! But here are the results to our model.
+
+### Training Layers
+ReLU, or the rectified linear unit function, is the best when it comes to computer vision through convolutional neural networks. Not only is it cheaper and faster to compute, it isn't affected by the vanishing gradient problem. Also since the images we are training on are grayscale images, relu function triumphs over sigmoid or tanh functions because it can show extremes, black vs. white, more clearly. Leaky ReLU and parametric ReLU functions might also be fun to experiment with as well. But in our scenario, ReLU looked the be the best option.
+
+<img width="500" src="public/TensorFlowModel/model_saved/1/1_layers.PNG" alt="Model Layers">
+
+Another factor we paid attention to was the filter/kernel sizes of our additional Conv2D layers. While Smaller filter sizes are better for distinguishing in between smaller features like circles and rectangles, larger filter sizes are better for distinguishing in between larger features such as whole objects in an image. In our case scenario, I realized that it may be more important to use smaller filter sizes while implementing some 5,5 filters to avoid overfitting to the training dataset. Dropout layers were also added to prevent overfitting. As a result, the model was able to avoid overfitting and trained up to 16 epochs, where it stopped because it was seeming minimal to no improvements.
+
+<img width="250" src="public/TensorFlowModel/model_saved/1/1_epochs.PNG" alt="Prediction tensorboard"><img width="300" src="public/TensorFlowModel/model_saved/1/1_results.PNG" alt="Prediction tensorboard">
 
 ## <div id="development">4-1. Results</span>
 
