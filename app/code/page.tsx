@@ -28,7 +28,7 @@ export default function Home() {
               take a look at the source code for the functions we used, please feel free to hover over each of them. This will bring up the source code of the function and
               call back functions if you wish to take a look into them as well.</p>
             <div className="bg-white flex justify-center pb-2 rounded-b-md " >
-              <Image src="/overlay_example_resized.png" width={800} height={1200} alt="example of the overlay" ></Image>
+              <Image src="/overlay_example_resized.PNG" width={800} height={1200} alt="example of the overlay" ></Image>
             </div>
           </div>
 

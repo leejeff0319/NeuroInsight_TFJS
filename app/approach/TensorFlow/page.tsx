@@ -43,7 +43,7 @@ export default function Home() {
             </p>
             <div className="flex flex-row justify-center items-center mt-2">
               <Image
-                src="/TensorFlowModel/model_saved/1/1_layers.png"
+                src="/TensorFlowModel/model_saved/1/1_layers.PNG"
                 width={700}
                 height={750}
                 alt="Secondary Image of website"
@@ -57,13 +57,13 @@ export default function Home() {
             </p>
             <div className="flex flex-row justify-center items-center mt-2">
               <Image
-                src="/TensorFlowModel/model_saved/1/1_epochs.png"
+                src="/TensorFlowModel/model_saved/1/1_epochs.PNG"
                 width={300}
                 height={750}
                 alt="Epoch results of model"
               />
               <Image
-                src="/TensorFlowModel/model_saved/1/1_results.png"
+                src="/TensorFlowModel/model_saved/1/1_results.PNG"
                 width={400}
                 height={750}
                 alt="Graph results of model"
