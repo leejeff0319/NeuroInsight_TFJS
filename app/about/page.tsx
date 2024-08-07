@@ -53,11 +53,11 @@ export default function Home() {
 
               {/* Description */}
               <div className="profile-description">
-                <h2 className="h-72">
+                <h2 className="h-80">
                    Hi, my name is Jeff, and I am currently a research assistant at Boston Children&apos;s Hospital. I graduated from Vanderbilt University with a Chemistry major, but decided
-                  to explore the field of Machine Learning with my brother after finding out all the possibilites and ease of accessbility. < br />
+                  to explore the field of Machine Learning with my brother after finding out all the possibilites and ease of accessbility. < br />< br />
                    I am having a lot of fun learning about this field, and this is one of the many more machine learning projects I plan to work on. On top of these projects, I am
-                  also taking classes related to the subject at UC San Diego Extension School, and plan on attending graduate school in the near future to further deepen my knowledge in this field. < br />
+                  also taking classes related to the subject at UC San Diego Extension School, and plan on attending graduate school in the near future to further deepen my knowledge in this field. < br />< br />
                    If you want to get to know about me more, please feel free to visit my personalized portfolio website! This is the first website I made by myself using NextJS:&nbsp;
                   <Link className="" target="_blank" style={{ color: "#40a56b" }} href="https://jeffthescientist.ai">JeffTheScientist.ai</Link>
                 </h2>
@@ -84,7 +84,7 @@ export default function Home() {
 
               {/* Description */}
               <div className="profile-description ">
-                <h2 className="h-72">
+                <h2 className="h-80">
                    Hello, my name is Sean, and I am currently studying Data Science at UC Irvine. I was initially studying Physics for the first 3 years of university, but decided quickly
                   to switch my major to data science after I fell in love with its never-ending possibilities and practicality in today&apos;s world led by data. <br /><br />
                    My passion lies in building different machine learning models and applying them to real life application problems to come up with an optimized solution.
